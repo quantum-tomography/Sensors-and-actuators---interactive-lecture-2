@@ -92,6 +92,20 @@ const lessonData = {
       "text": "<p>\nThe voltage drop across a semiconductor junction decreases approximately linearly with temperature, with a typical rate of about \n<b>2 mV/°C<\/b>. For silicon-based devices, this relationship remains sufficiently linear over a wide temperature range, \ntypically from about <b>−50°C to +150°C<\/b>.\n<\/p>\n\n<p>\n\n\n<div style=\"margin-top:20px; font-size:0.9em;\">\n Interactive simulation of a temperature-to-pulse train converter:\n  <a href=\"https://tinyurl.com/yd5eqjub\" target=\"_blank\" style=\"color:#60a5fa;\">\n    https://tinyurl.com/yd5eqjub\n  <\/a>\n<\/div>\n\n<div style=\"font-size:0.85em; color:#94a3b8; margin-top:10px;\">\n  Simulation based on Paul Falstad’s Circuit Simulator. \n<\/div>\n<div style=\"text-align:center; margin:20px 0;\">\n  <a href=\"https://tinyurl.com/yd5eqjub\" target=\"_blank\">\n    <img src=\"images/temp_to_pulses.png\"\n         alt=\"Temperature to pulse simulation\"\n         style=\"max-width:600px; width:100%; border-radius:8px;\n                box-shadow:0 4px 14px rgba(0,0,0,0.25); cursor:pointer;\">\n  <\/a>\n  <div style=\"font-size:0.9em; color:#94a3b8; margin-top:6px;\">\n    Click the image to open the interactive simulation\n  <\/div>\n<\/div>\n<div style=\"font-size:0.8em; color:#94a3b8; margin-top:10px;\">\n  Based on laboratory materials by А. С. Леви и А. Манукова-Маринова, \n„Ръководство за лабораторни упражнения по дисциплината \n‘Електронни устройства за контрол и управление’,“ \nРусе, 1994 г.\n<\/div>\n<\/p>",
       "bullets": [],
       "useDropcap": true
+    },
+    {
+      "id": "s_i4kmk6bh",
+      "type": "content",
+      "title": "Digital body thermometer",
+      "text": "Most common electronic body thermometers use a thermistor, not a thermocouple.",
+      "bullets": [
+        "Typically NTC thermistors (Negative Temperature Coefficient)",
+        "Resistance decreases as temperature increases",
+        "Very sensitive in the 35–42°C range",
+        "Cheap, small, and easy to interface with simple electronics",
+        "A simpler practical solution is to use a lookup table. In this approach, the device stores a table of known resistance–temperature pairs in memory. After measuring the thermistor resistance, the microcontroller finds the closest value in the table and determines the corresponding temperature. This method is easy to implement and is very common in compact digital thermometers."
+      ],
+      "useDropcap": true
     }
   ]
 };
